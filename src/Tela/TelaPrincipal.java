@@ -5,6 +5,8 @@
  */
 package Tela;
 
+import Modelo.Funcionario;
+
 /**
  *
  * @author aluno
@@ -15,6 +17,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
      * Creates new form TelaPrincipal
      */
     public TelaPrincipal() {
+        initComponents();
+    }
+    
+    public TelaPrincipal(Funcionario funcionario) {
         initComponents();
     }
 
