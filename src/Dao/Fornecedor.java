@@ -23,6 +23,7 @@ public class Fornecedor {
     private static String getId() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
     
     public boolean salvar(Funcionario funcionario) {
 
@@ -109,13 +110,7 @@ public class Fornecedor {
             ResultSet result = prep.executeQuery();
 
             while (result.next()) {
-    /* private int id;
-    private String nome;
-    private String cnpj;
-    private String nomeContato;
-    private String emailContato;
-    private String telefoneContato;
-    private boolean status;*/
+
                 FuncionarioDao p = new FuncionarioDao();
                 p.setId(result.getInt("id"));
                 p.setNome(result.getString("nome"));

@@ -10,15 +10,15 @@ package Modelo;
  * @author aluno
  */
 public class Login {
-    private String nome;
     private String login;
+    private String senha;
 
     public String getNome() {
-        return nome;
+        return login;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String login) {
+        this.login = login;
     }
 
     public String getLogin() {
@@ -36,5 +36,5 @@ public class Login {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    private String senha;
+
 }

@@ -1,10 +1,11 @@
-package Modelo;
+package Dao;
 
+import Modelo.Funcionario;
 import banco.Conexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-public class Logindao {
+public class LoginDao {
     
     public Funcionario autenticacao(String login, String senha){
         

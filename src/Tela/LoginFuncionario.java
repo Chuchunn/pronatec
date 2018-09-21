@@ -6,7 +6,7 @@
 package Tela;
 
 import Modelo.Funcionario;
-import Modelo.Logindao;
+import Dao.LoginDao;
 
 /**
  *
@@ -33,8 +33,8 @@ public class LoginFuncionario extends javax.swing.JFrame {
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         txtSenha = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
 
@@ -107,14 +107,9 @@ public class LoginFuncionario extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         txtSenha.setText("jPasswordField1");
+
+        jButton1.setText("Okay");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -122,12 +117,13 @@ public class LoginFuncionario extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1)
-                    .addComponent(login, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)
-                    .addComponent(jLabel2)
-                    .addComponent(jButton1)
-                    .addComponent(txtSenha))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel1)
+                        .addComponent(login, javax.swing.GroupLayout.DEFAULT_SIZE, 202, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addComponent(txtSenha))
+                    .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(635, 635, 635))
@@ -235,26 +231,6 @@ public class LoginFuncionario extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    
-        String login = txtLogin.getText();
-        String senha = new String(txtSenha.getPassword());
-        
-        Logindao ud = new Logindao();
-        Funcionario funcionario = ud.autenticacao(login, senha);
-        
-        if(funcionario == null){
-            System.out.println("Erro");
-        }else{
-            System.out.println("bem bindo");
-            
-            TelaPrincipal mt = new TelaPrincipal(funcionario);
-            mt.setVisible(true);
-            this.dispose();
-        }
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:

@@ -82,6 +82,14 @@ public class Produto {
     public void setIdFornecedor(int idFornecedor) {
         this.idFornecedor = idFornecedor;
     }
+
+    public double QuantidadeEstoque() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public int IdFornecedor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

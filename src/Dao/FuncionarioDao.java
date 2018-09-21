@@ -33,9 +33,9 @@ public class FuncionarioDao {
             String sql = "insert into Funcionario(nome,cargo,login,senha) values(?,?,?,?)";
             PreparedStatement prep = con.prepareStatement(sql);
             prep.setString(1, funcionario.getNome());
-            prep.setString(3, funcionario.getCargo());
-            prep.setString(4, funcionario.getLogin());
-            prep.setString(5, funcionario.getSenha());
+            prep.setString(2, funcionario.getCargo());
+            prep.setString(3, funcionario.getLogin());
+            prep.setString(4, funcionario.getSenha());
 
             prep.execute();
 
@@ -63,9 +63,9 @@ public class FuncionarioDao {
 
             PreparedStatement prep = con.prepareStatement(sql);
             prep.setString(1, funcionario.getNome());
-            prep.setString(3, funcionario.getCargo());
-            prep.setString(4, funcionario.getLogin());
-            prep.setString(5, funcionario.getSenha());
+            prep.setString(2, funcionario.getCargo());
+            prep.setString(3, funcionario.getLogin());
+            prep.setString(4, funcionario.getSenha());
 
             prep.execute();
             return true;
@@ -158,11 +158,11 @@ public class FuncionarioDao {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void setId(int aInt) {
+    void setId(int aInt) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void setNome(String string) {
+    void setNome(String string) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -222,6 +222,18 @@ public Funcionario autenticacao(String login, String senha){
         
     }  
 
+    void setCargo(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setLogin(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setSenha(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     private String getCargo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -234,27 +246,7 @@ public Funcionario autenticacao(String login, String senha){
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    private void setCargo(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void setLogin(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void setSenha(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getTelefoneContato() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getEmailContato() {
+    String getCnpj() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -262,10 +254,16 @@ public Funcionario autenticacao(String login, String senha){
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    String getCnpj() {
+    String getEmailContato() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-}
-   
 
+    String getTelefoneContato() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getStatus() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+}

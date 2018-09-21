@@ -52,7 +52,7 @@ public class ClienteDao {
 
     }
 
-    public boolean alterar(Cliente cliente) {
+    public boolean alterar(ClienteDao cliente) {
 /*       private int id;
     private String nome;
     private Date datanasc;
@@ -74,7 +74,7 @@ public class ClienteDao {
 
             PreparedStatement prep = con.prepareStatement(sql);
             prep.setString(1, cliente.getNome());
-            prep.setDate(2, new java.sql.Date(cliente.getDatanasc().getTime()));
+            prep.setDate(2, new java.sql.Date(cliente.getdatanasc().getTime()));
             prep.setInt(3, cliente.getCpf());
             prep.setInt(4, cliente.getTelefone());
             prep.setString(5, cliente.getEmail());
@@ -148,10 +148,34 @@ public class ClienteDao {
         
     }
 
-    private void values(String string) {
+    private String getId() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    private String getNome() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private Object getdatanasc() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private int getCpf() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private int getTelefone() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String getEmail() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String getEndereco() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
 
+   

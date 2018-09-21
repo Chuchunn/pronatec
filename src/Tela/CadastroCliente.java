@@ -174,7 +174,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jTextField6.setText("jTextField6");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Okay");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -200,9 +200,9 @@ public class CadastroCliente extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(170, 170, 170)
+                .addGap(95, 95, 95)
                 .addComponent(jButton1)
-                .addGap(371, 371, 371))
+                .addGap(470, 470, 470))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

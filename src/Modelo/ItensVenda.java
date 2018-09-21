@@ -4,7 +4,7 @@ public class ItensVenda {
     private int id;
     private double quantidade;
     private double precoUnidade;
-    private double descontoUNdiade;
+    private double descontoUndiade;
     private double precoComDesconto;
     private int idVenda;
     private int idProduto;
@@ -34,11 +34,11 @@ public class ItensVenda {
     }
 
     public double getDescontoUNdiade() {
-        return descontoUNdiade;
+        return descontoUndiade;
     }
 
     public void setDescontoUNdiade(double descontoUNdiade) {
-        this.descontoUNdiade = descontoUNdiade;
+        this.descontoUndiade = descontoUNdiade;
     }
 
     public double getPrecoComDesconto() {
